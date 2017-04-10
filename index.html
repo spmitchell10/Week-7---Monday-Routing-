@@ -1,0 +1,59 @@
+<!doctype html>
+<html ng-app='routing'>
+
+<head>
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<!-- Header -->
+
+    <header class="container-fluid">
+        <div class="row topGreyRow">
+            <h1 class="shopular">hero<a style=color:red>.villan</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a ui-sref='home'>Home</a></li>
+                    <li><a ui-sref='heros'>Heros</a></li>
+                    <li><a style=color:red ui-sref='villains'>Villains</a></li>
+                    <li><a ui-sref='login'>Login</a></li>
+                    <!-- <li>Admin</li> -->
+                </ul>
+            </div>
+            <div class="row bottomLine"></div>
+    </header>
+
+<!-- Body -->
+
+    <div class="container-fluid" id="characters">
+        <div class="row">
+            <section  ui-view='content'></section>
+        </div>
+    </div>
+
+<!-- Footer -->
+
+    <footer>
+        <h3>All Rights<a style=color:red> Reserved</a></h3>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <script src='js/main.js'></script>
+    <script src='js/Services/services.js'></script>
+    <script src='js/Controllers/MainControllers.js'></script>
+    <script src='js/Controllers/HeroControllers.js'></script>
+    <script src='js/Controllers/singleHeroControllers.js'></script>
+</body>
+
+</html>
