@@ -33,6 +33,17 @@
 		      
 		   }
 	    })
+	    .state('villains', {
+	      url: '/villains',
+	      views: {
+		      'content': {
+		        templateUrl: '../partials/villains.html',
+		        controller: 'VillainControllers',
+		        controllerAs: 'vm'
+		      },
+		      
+		   }
+	    })
 	    .state('singleHeros', {
 	      url: '/heros/:id',
 	      views: {

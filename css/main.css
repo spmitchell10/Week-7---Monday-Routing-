@@ -73,10 +73,10 @@ img {
   margin-top: -45px; }
 
 footer {
-  margin-top: 10px;
   text-align: center;
   height: 50px;
   background-color: #292F36;
-  color: white; }
+  color: white;
+  padding-top: 12px; }
   footer h3 {
-    padding-top: 12px; }
+    margin: 0px; }
