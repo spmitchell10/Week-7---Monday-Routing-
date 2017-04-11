@@ -5,10 +5,10 @@
     .module('routing', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider,$locationProvider){
 
-    	$locationProvider.html5Mode({
-		  enabled: true,
-		  requireBase: false
-		});
+  //   	$locationProvider.html5Mode({
+		//   enabled: true,
+		//   requireBase: false
+		// });
 
     	$stateProvider
 	    .state('home', {
@@ -37,7 +37,7 @@
 	      url: '/villains',
 	      views: {
 		      'content': {
-		        templateUrl: '../partials/villains.html',
+		        templateUrl: '../partials/heros.html',
 		        controller: 'VillainControllers',
 		        controllerAs: 'vm'
 		      },
@@ -49,7 +49,7 @@
 	      views: {
 		      'content': {
 		        templateUrl: '../partials/singleHeros.html',
-		        controller: 'singleHeroControllers',
+		        controller: 'singleHeroController',
 		        controllerAs: 'vm'
 		      },
 		      

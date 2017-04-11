@@ -6,11 +6,11 @@
         .controller('VillainControllers', function(API) {
             const vm = this;
 
-            const villains = API.getVillains();
+            const heros = API.getVillains();
 
-            villains.then(res => {
+            heros.then(res => {
             	console.log(res);
-                vm.villains = res.data.data.results;
+                vm.heros = res.data.data.results;
             })
 
         });

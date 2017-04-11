@@ -1,11 +1,11 @@
-<h1>Villians</h1>
-<div class="comic col-md-3" ng-repeat="villains in vm.villains">
+<h1 id="title"></h1>
+<div class="comic col-md-3" ng-repeat="villains in vm.heros">
     
         <div class="heros"> 
         <img class="characterphoto" src="{{villains.thumbnail.path}}.{{villains.thumbnail.extension}}"/>
             <h3 class="charactername">{{villains.name}}</h3>
             
-            <a class="btn btn-primary" ui-sref='singleHeros({id:villains.id})'>View More</a>
+            <a class="btn btn-primary" ui-sref='singleHeros({id:heros.id})'>View More</a>
         </div>
     
 </div>

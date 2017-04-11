@@ -6,11 +6,12 @@
         .controller('singleHeroController', function(API,$stateParams) {
 
         	const vm = this;
+            let id = $stateParams.id;
 
-            const heros = API.getSingleHeros();
+            const heros = API.getSingleHeros(id);
             
             heros.then(res=>{
-                vm.heros = res.data.data.results;
+                vm.heros = res.data.data.results[0];
             })
 
         });

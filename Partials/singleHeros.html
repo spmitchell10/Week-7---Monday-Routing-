@@ -1,6 +1,10 @@
-<h1>{{heros.name}}</h1>
 
-<div class="blog" >
-	<img class="characterphoto" src="{{heros.thumbnail.path}}.{{heros.thumbnail.extension}}"/>
-	<p>{{heros.description}}</p>
+
+<div class="col-md-6 singleHero">
+<h1>{{vm.heros.name}}</h1>
+	<img class="characterphoto" src="{{vm.heros.thumbnail.path}}.{{vm.heros.thumbnail.extension}}"/>
+	</div>
+	<div class="col-md-6 HeroDescription">
+	<h3>Character Info</h3>
+	<p>{{vm.heros.description}}</p>
 </div>
