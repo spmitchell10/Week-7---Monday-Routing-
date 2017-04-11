@@ -5,6 +5,10 @@
 	<img class="characterphoto" src="{{vm.heros.thumbnail.path}}.{{vm.heros.thumbnail.extension}}"/>
 	</div>
 	<div class="col-md-6 HeroDescription">
-	<h3>Character Info</h3>
-	<p>{{vm.heros.description}}</p>
+	<div><h3>Character Info</h3>
+	<p>{{vm.heros.description}}</p></div>
+	<div>
+		<h3>Comics</h3>
+		<p ng-repeat="comic in vm.heros.comics.items">{{comic.name}}</p>
+	</div>
 </div>
