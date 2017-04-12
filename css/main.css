@@ -23,7 +23,7 @@ body {
   position: absolute;
   margin-left: 10px;
   padding-top: 10px; }
-  .weather h5, .weather h3 {
+  .weather h4, .weather h3, .weather h5 {
     margin: 0px; }
 
 header {
